@@ -1,0 +1,23 @@
+* {
+  outline: 1px dashed rgb(108, 242, 46);
+  outline-offset: -1px;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: rgb(24, 69, 24);
+}
+
+header {
+  /* outline: 2px dashed greenyellow; */
+  display: flex;
+}
+
+nav {
+
+}
+
+#welcome {
+  
+}
