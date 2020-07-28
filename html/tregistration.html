@@ -5,9 +5,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/style.css">
-  <title>Document</title>
+  <title>Tutor Registration</title>
 </head>
 <body>
+  <header>
+    <nav>
+
+    </nav>
+  </header>
+
+  <main>
+    <div>
+      <h1 class="pageTitle">Tutor Registration Form</h1>
+    </div>
+    <div>
+      <p class="pageDescription">Thank you for volunteering as a tutor! Your help is greatly appreciated. Selected your level and subject below to be registered in our list of tutors.</p>
+    </div>
+    <div>
+      <form id="tutor-registration-form">
+        <fieldset>
+          <legend>Registration Form</legend>
+
+          <label for="tutorName">Name: </label>
+          <input type="text" name="tutorName" required minlength="2"></input>
+
+          <label for="tutorPhone">Phone Number: </label>
+          <input type="text" name="tutorPhone"></input>
+
+          <label for="tutorEmail">Email: </label>
+          <input type="text" name="tutorEmail"></input>
+
+          <label for="tutorSubject">Subject: </label>
+          <!-- Change to drop down option -->
+          <input type="text" name="tutorSubject" required minlength="2"></input>
+
+          <label for="tutorLevel">Level: </label>
+          <input type="text" name="tutorLevel" required minlength="2"></input>
+
+          <label for="tutorWebsite">Website: </label>
+          <input type="text" name="tutorWebsite" required minlength="2"></input>
+
+          <label for="tutorDesc">Description: </label>
+          <input type="text" name="tutorDesc"></input>
+
+          <input type="submit" value="Register" id="submit">
+
+        </fieldset>
+      </form>
+    </div>
+
+    <div id="confirmation-registration">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis quasi necessitatibus sequi itaque amet praesentium corporis maxime possimus recusandae! Cupiditate nemo nesciunt optio dolores rem illum modi maiores inventore. Ad.</p>
+    </div>
+  </main>
+
+  <footer>
+    <nav>
+
+    </nav>
+  </footer>
   <script src="../app.js"></script>
 </body>
 </html>
