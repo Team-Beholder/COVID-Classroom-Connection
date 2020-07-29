@@ -54,7 +54,7 @@ nav {
 
 table {
      
-      outline: 2px dashed blue;
+      /* outline: 2px dashed blue; */
       width: 400px;
       height: 250px;
       position: absolute;   
@@ -112,3 +112,46 @@ legend {
 /* Source:https://css-tricks.com/tips-for-creating-great-web-forms/ */
 
 /* =========== CSS Rules for Tutor Registration Page (end) =========== */
+
+
+/* ============= CSS RULES FOR TUTOR TABLE LIST PAGE (START) =========== */
+
+#tableContainer {
+  outline: blue dashed 2px;
+  background-image: url("/img/chalkboardTable.jpg");
+  height: 300px;
+  margin: 0 auto;
+  width: 85%;
+  padding: 20px;
+}
+
+#tableOfTutors {
+  padding: 20px;
+}
+
+#tableOfTutors, #tableOfTutors th, #tableOfTutors td {
+  border: solid white 3px;
+  border-collapse: collapse;
+  color: white;
+}
+
+#tableOfTutors td {
+
+}
+
+#tableOfTutors th {
+  font-weight: bold;
+
+}
+
+#threePics {
+  margin: 40px;
+}
+
+#threePics ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+/* ============= CSS RULES FOR TUTOR TABLE LIST PAGE (END) =========== */
