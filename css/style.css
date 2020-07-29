@@ -30,6 +30,7 @@ nav {
 #welcome {
   
 }
+
 /* #tableBackground {
   outline: 1px dashed rgb(108, 242, 46);
   background-image: url('/img/chalkboardTable.jpg');
@@ -68,3 +69,46 @@ footer {
 }
 
 /* ==========================  End Home Page CSS ===================== */
+
+
+/* =========== CSS Rules for Tutor Registration Page (start) =========== */
+
+#tutor-registration-form {
+  border: solid black 2px;
+  border-radius: 10px;
+  width: 65%;
+  margin: 0px auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+legend, #button {
+  text-align: center;
+}
+
+legend {
+  font-weight: bold;
+  padding: 10px 0px 10px 0px;
+}
+
+#tutor-registration-form > fieldset > div {
+  margin: 10px 0px 10px 0px; 
+}
+
+#tutor-registration-form > fieldset > div > input {
+  width: 350px;
+}
+
+#tutor-registration-form > fieldset > #button > input {
+  width: 70px;
+}
+
+#tutor-registration-form > fieldset > div > label {
+  float: left;
+  text-align: right;
+  margin-right: 15px;
+  width: 150px;
+}
+/* Source:https://css-tricks.com/tips-for-creating-great-web-forms/ */
+
+/* =========== CSS Rules for Tutor Registration Page (end) =========== */
