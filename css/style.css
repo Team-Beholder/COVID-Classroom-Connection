@@ -8,39 +8,72 @@
 
 
 body {
-  /* background-color: rgb(24, 69, 24); */
-  background-image: url("/img/backgroundChalk.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-image: url("/img/backgroundChalk.jpg"); */
+  background-size: 100%;
   margin: auto;
   width: 960px;
-    
 }
 
 header {
-  /* outline: 2px dashed greenyellow; */
   display: flex;
-
+  /* justify-content: space-evenly; */
+  margin-top: 30px;
 }
 
-nav {
-
+header > nav > ul > li {
+  display: inline-block;
+  padding: 0 45px;
+  margin-top: 65px;
 }
 
-#welcome {
-  
+
+#leftnav {
+  float: left;
 }
 
-/* #tableBackground {
-  outline: 1px dashed rgb(108, 242, 46);
-  background-image: url('/img/chalkboardTable.jpg');
-  width: 500px;
-  height: 300px;
-  position: relative;
-  
- 
-} */
+#rightnav {
+  float: right;
+}
 
+
+nav > img {
+  height: 150px;
+  border-radius: 35px;
+  padding: 0 50px;
+}
+
+#welcome > h1 {
+  text-align: center;
+  font-size: 35px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+#welcomeP > p {
+  text-align: justify;
+  width: 700px;
+  margin: auto; 
+}
+
+#suppliesImg {
+  width: 75px;
+  height: 75px;
+  border-radius: 45px;
+  border: black 2px outset;
+}
+#classroomImg {
+  width: 75px;
+  height: 75px;
+  border-radius: 45px;
+  border: black 2px outset;
+}
+
+#activitiesImg {
+  width: 75px;
+  height: 75px;
+  border-radius: 45px;
+  border: black 2px outset;
+}
 
 #resourceTable > p{
   outline: 1px dashed rgb(108, 242, 46);
