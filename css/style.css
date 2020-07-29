@@ -1,17 +1,26 @@
+/* ==================  Start of Home Page CSS ================*/
+
 * {
-  outline: 1px dashed rgb(108, 242, 46);
+  /* outline: 1px dashed rgb(108, 242, 46); */
   outline-offset: -1px;
   box-sizing: border-box;
 }
 
 
 body {
-  background-color: rgb(24, 69, 24);
+  /* background-color: rgb(24, 69, 24); */
+  background-image: url("/img/backgroundChalk.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: auto;
+  width: 960px;
+    
 }
 
 header {
   /* outline: 2px dashed greenyellow; */
   display: flex;
+
 }
 
 nav {
@@ -21,3 +30,41 @@ nav {
 #welcome {
   
 }
+/* #tableBackground {
+  outline: 1px dashed rgb(108, 242, 46);
+  background-image: url('/img/chalkboardTable.jpg');
+  width: 500px;
+  height: 300px;
+  position: relative;
+  
+ 
+} */
+
+
+#resourceTable > p{
+  outline: 1px dashed rgb(108, 242, 46);
+  background-image: url('/img/chalkboardTable.jpg');
+  width: 500px;
+  height: 300px;
+  position: fixed;
+  overflow: hidden;
+   
+}
+
+table {
+     
+      outline: 2px dashed blue;
+      width: 400px;
+      height: 250px;
+      position: absolute;   
+      z-index: 10; 
+            
+    }
+
+footer { 
+  outline: 2px dashed magenta;
+  position: absolute;
+  bottom: 0;
+}
+
+/* ==========================  End Home Page CSS ===================== */
