@@ -1,45 +1,77 @@
 /* ==================  Start of Home Page CSS ================*/
 
 * {
-  /* outline: 1px dashed rgb(108, 242, 46); */
   outline-offset: -1px;
   box-sizing: border-box;
 }
 
 
 body {
-  /* background-image: url("/img/backgroundChalk.jpg"); */
+  background-image: url("/img/backgroundChalk.jpg");
   background-size: 100%;
   margin: auto;
   width: 960px;
+  color: wheat;
 }
 
 header {
-  display: flex;
-  /* justify-content: space-evenly; */
+  /* display: flex; */
+  /* flex-direction: row;
+  justify-content: space-evenly; */
   margin-top: 30px;
+  
 }
 
-header > nav > ul > li {
-  display: inline-block;
-  padding: 0 45px;
-  margin-top: 65px;
-}
+ /* header > nav > ul > li {
+  display: inline-block; */
+  /* padding: 0 45px;  */
+  /* margin: 45px;
+  margin-top: 65px; 
+  outline: dotted 2px cornflowerblue;
+}  */
 
 
 #leftnav {
   float: left;
+  
+ 
+}
+
+#leftnav > li{
+  display: inline-block;
+  /* margin-left: 45px; */
+  margin: 45px;
+  margin-top: 65px;
+
+
 }
 
 #rightnav {
   float: right;
+  
+    
+}
+
+#rightnav > li{
+  display: inline-block;
+  margin-right: 30px;
+  margin-top: 65px;
+
+
 }
 
 
 nav > img {
   height: 150px;
   border-radius: 35px;
-  padding: 0 50px;
+  /* padding: 0 50px; */
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* justify-content: space-evenly;  */
+  margin-left: 100px;
+  margin-right: 10px;
+   
+  
 }
 
 #welcome > h1 {
@@ -53,6 +85,14 @@ nav > img {
   text-align: justify;
   width: 700px;
   margin: auto; 
+  margin-bottom: 30px;
+}
+
+#resourceLinks ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
 }
 
 #suppliesImg {
@@ -75,36 +115,53 @@ nav > img {
   border: black 2px outset;
 }
 
+#resourceTable{
+  height: 300px;
+  margin-bottom: 30px;
+  
+}
+
 #resourceTable > p{
-  outline: 1px dashed rgb(108, 242, 46);
   background-image: url('/img/chalkboardTable.jpg');
   width: 500px;
   height: 300px;
-  position: fixed;
+  position: absolute;
   overflow: hidden;
+  margin-left: 230px;
+  margin-bottom: 30px;
    
 }
 
 table {
-     
-      /* outline: 2px dashed blue; */
-      width: 400px;
-      height: 250px;
-      position: absolute;   
-      z-index: 10; 
-            
-    }
+  width: 400px;
+  height: 250px;
+  position: absolute;   
+  z-index: 10; 
+  margin-left: 265px;
+  margin-top: 10px;
+  color: red;
+}
 
 footer { 
-  outline: 2px dashed magenta;
-  position: absolute;
   bottom: 0;
 }
 
-/* ==========================  End Home Page CSS ===================== */
+#bottomNav{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 
+}
 
-/* =========== CSS Rules for Tutor Registration Page (start) =========== */
+#contactInfo {
+  margin-top: 75px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 75px;
+}
+
 
 #tutor-registration-form {
   border: solid black 2px;
@@ -142,12 +199,9 @@ legend {
   margin-right: 15px;
   width: 150px;
 }
+
 /* Source:https://css-tricks.com/tips-for-creating-great-web-forms/ */
 
-/* =========== CSS Rules for Tutor Registration Page (end) =========== */
-
-
-/* ============= CSS RULES FOR TUTOR TABLE LIST PAGE (START) =========== */
 
 #tableContainer {
   outline: blue dashed 2px;
