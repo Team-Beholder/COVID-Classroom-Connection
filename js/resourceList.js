@@ -37,24 +37,12 @@ Resource.prototype.renderResourceInTheTable = function() {
           resourceCell.textContent = Resource.arrayOfResources[i][resourceProp[j]];
         } else {
           var a = document.createElement('a');
-
           var link = document.createTextNode('Website');
-
           a.appendChild(link);
-
           a.title = 'Website';
-
           a.href = Resource.arrayOfResources[i][resourceProp[j]];
-
           resourceCell.appendChild(a);
         }
-        
-        
-        
-        
-        
-        
-        
         resourceRow.appendChild(resourceCell);
       }
       // step 3 of creating the row, is to append the row to the table

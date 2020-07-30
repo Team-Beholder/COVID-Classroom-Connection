@@ -34,7 +34,34 @@ Tutor.prototype.renderTutorInTheTable = function() {
       var tutorCell = document.createElement('td');
 
       // step 2.5: put contents into newly created row element
+
+      if (j === 5) {
+
+        var a = document.createElement('a');
+        var link = document.createTextNode('Website');
+        a.appendChild(link);
+        a.title = 'Website';
+        a.href = Tutor.arrayOfTutors[i][tutorProp[j]];
+        tutorCell.appendChild(a);
+      
+      } else if (j === 2) {
+        
+        var emailLink = 'mailto:' + Tutor.arrayOfTutors[i][tutorProp[j]];
+        var a = document.createElement('a');
+        var link = document.createTextNode('email');
+        a.appendChild(link);
+        a.title = 'email';
+        a.href = emailLink;
+        tutorCell.appendChild(a);
+
+
+        // <a href="mailto:webmaster@example.com">Jon Doe</a>
+
+
+      
+      } else {
       tutorCell.textContent = Tutor.arrayOfTutors[i][tutorProp[j]];
+      }
       tutorsRow.appendChild(tutorCell);
     }
     // step 3 of creating the row, is to append the row to the table
