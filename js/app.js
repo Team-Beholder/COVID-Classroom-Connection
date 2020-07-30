@@ -104,15 +104,15 @@ if (parsedTutors !== null){
 
 } else {
   new Tutor('Steph', '2065798587','email@any.com','math','high school', 'www.google.com', 'I am helpful!');
-  new Tutor('Tif', '2065798587','email@any.com','math','high school', 'www.google.com', 'I am helpful!');
-  new Tutor('Michael', '2065798587','email@any.com','math','high school', 'www.google.com', 'I am the most helpful of all and good at subjects for all grade levels!');
-  new Tutor('Tif', '2065798587','email@any.com','math','high school', 'www.google.com', 'I am helpful!');
-  new Tutor('Michael', '2065798587','email@any.com','math','high school', 'www.google.com', 'I am the most helpful of all and good at subjects for all grade levels!');
-  new Tutor('Steph', '2065798587','email@any.com','math','high school', 'www.google.com', 'I am helpful!');
-  new Tutor('Tif', '2065798587','email@any.com','math','high school', 'www.google.com', 'I am helpful!');
-  new Tutor('Michael', '2065798587','email@any.com','math','high school', 'www.google.com', 'I am the most helpful of all and good at subjects for all grade levels!');
-  new Tutor('Tif', '2065798587','email@any.com','math','high school', 'www.google.com', 'I am helpful!');
-  new Tutor('Michael', '2065798587','email@any.com','math','high school', 'www.google.com', 'I am the most helpful of all and good at subjects for all grade levels!');
+  new Tutor('Tif', '2065961673','email@any.com','math','high school', 'www.google.com', 'I am helpful!');
+  new Tutor('Kirby', '206839651','email@any.com','math','high school', 'www.google.com', 'I am the most helpful of all and good at subjects for all grade levels!');
+  new Tutor('Brandon', '2065798587','email@any.com','math','high school', 'www.google.com', 'I am helpful!');
+  new Tutor('Philip', '2065798587','email@any.com','math','high school', 'www.google.com', 'I am the most helpful of all and good at subjects for all grade levels!');
+  new Tutor('Diddy', '2065798587','email@any.com','math','high school', 'www.google.com', 'I am helpful!');
+  new Tutor('Terra', '2065798587','email@any.com','math','high school', 'www.google.com', 'I am helpful!');
+  new Tutor('Mario', '2065798587','email@any.com','math','high school', 'www.google.com', 'I am the most helpful of all and good at subjects for all grade levels!');
+  new Tutor('Drake', '2065798587','email@any.com','math','high school', 'www.google.com', 'I am helpful!');
+  new Tutor('Cloud', '2065798587','email@any.com','math','high school', 'www.google.com', 'I am the most helpful of all and good at subjects for all grade levels!');
 
   // new Tutor(more tutors);
 
