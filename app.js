@@ -1,5 +1,3 @@
-console.log("it worked");
-
 'use strict';
 
 // ********** Global Variables **********
@@ -42,7 +40,6 @@ Tutor.prototype.renderTutorTable = function() {
     // step 3 of creating the row, is to append the row to the table
     targetTable.appendChild(tutorsRow);
   }
-
 };
 
 
@@ -72,24 +69,32 @@ Tutor.prototype.renderHeader = function() {
 
 
 
-
-
-
-
 // ********** Function Calls **********
 
-var Steph = new Tutor('Steph', '2065798587','email@any.com','math','high school', 'www.google.com', 'I am helpful!');
-var Tif = new Tutor('Tif', '2065798587','email@any.com','math','high school', 'www.google.com', 'I am helpful!');
-var Michael = new Tutor('Michael', '2065798587','email@any.com','math','high school', 'www.google.com', 'I am the most helpful of all and good at subjects for all grade levels!');
+var tutorsFromLS = localStorage.getItem('tutorListStorage');
+var parsedTutors = JSON.parse(tutorsFromLS);
 
-// new Tutor(more tutors);
+if (parsedTutors !== null){
+  for (var i = 0; i < parsedTutors.length; i++) {
+    new Tutor(parsedTutors[i].tutorName, parsedTutors[i].tutorPhone, parsedTutors[i].tutorEmail, parsedTutors[i].tutorSubject, parsedTutors[i].tutorLevel, parsedTutors[i].tutorWebsite, parsedTutors[i].tutorDesc);
+  }
+
+} else {
+  new Tutor('Steph', '2065798587','email@any.com','math','high school', 'www.google.com', 'I am helpful!');
+  new Tutor('Tif', '2065798587','email@any.com','math','high school', 'www.google.com', 'I am helpful!');
+  new Tutor('Michael', '2065798587','email@any.com','math','high school', 'www.google.com', 'I am the most helpful of all and good at subjects for all grade levels!');
+
+  // new Tutor(more tutors);
+
+  setTutorLocalStorage();
+}
 
 
-// Steph.renderHeader();
-// Steph.renderTutorTable();
-
-
-
+if (Tutor.arrayOfTutors.length > 0) {
+  Tutor.arrayOfTutors[0].renderHeader();
+  Tutor.arrayOfTutors[0].renderTutorTable();
+  // TODO: change misleading name of method.  Consider creating one general function to rule them all.
+}
 
 
 // =============  Form Section  =============
@@ -99,8 +104,6 @@ tutorForm.addEventListener('submit',submitEventHandler);
 
 function submitEventHandler(event) {
   event.preventDefault();
-
-  console.log('made it to callback');
 
   var tutorName = event.target.tutorName.value;
   var tutorPhone = event.target.tutorPhone.value;
