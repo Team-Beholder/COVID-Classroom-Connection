@@ -142,6 +142,11 @@ legend {
   margin-right: 15px;
   width: 150px;
 }
+
+#confirmation-registration-container p {
+  /* width: 300px;  TODO: Make it more presentable with reduced width and confetti */
+}
+
 /* Source:https://css-tricks.com/tips-for-creating-great-web-forms/ */
 
 /* =========== CSS Rules for Tutor Registration Page (end) =========== */
@@ -150,16 +155,20 @@ legend {
 /* ============= CSS RULES FOR TUTOR TABLE LIST PAGE (START) =========== */
 
 #tableContainer {
-  outline: blue dashed 2px;
   background-image: url("/img/chalkboardTable.jpg");
-  height: 300px;
+  height: 600px;
   margin: 0 auto;
-  width: 85%;
+  margin-top: 30px;
+  width: 900px;
   padding: 20px;
+  border: rgba(88, 28, 33, 0.847) groove 20px;
+  display: flex;
+  justify-content: center;
 }
 
 #tableOfTutors {
   padding: 20px;
+  width: 830px;
 }
 
 #tableOfTutors, #tableOfTutors th, #tableOfTutors td {
@@ -169,12 +178,16 @@ legend {
 }
 
 #tableOfTutors td {
+  padding: 5px;
+  vertical-align: middle;
 
 }
 
 #tableOfTutors th {
   font-weight: bold;
-
+  padding: 5px;
+  vertical-align: middle;
+  font-size: 15pt;
 }
 
 #threePics {
