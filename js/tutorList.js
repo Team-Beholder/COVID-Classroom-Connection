@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 if (Tutor.arrayOfTutors.length > 0) {
   Tutor.arrayOfTutors[0].renderHeader();

@@ -1,12 +1,12 @@
 'use strict';
 
-// ********** Global Variables **********
+// ============= Global Variables =============
 Tutor.arrayOfTutors = [];
 var tutorProperties = ['Name','Phone', 'Email', 'Subject', 'Level', 'Website', 'Description'];
 var tutorProp = ['tutorName', 'tutorPhone', 'tutorEmail', 'tutorSubject', 'tutorLevel', 'tutorWebsite', 'tutorDesc'];
 
-// ********** Function Definitions **********
-// ********** Tutor Domain Definitions **********
+// ============= Function Definitions =============
+// ============= Tutor Domain Definitions =============
 
 // definition of our Tutor Object Constructor
 function Tutor (tutorName, tutorPhone, tutorEmail, tutorSubject, tutorLevel, tutorWebsite, tutorDesc) {
@@ -79,34 +79,17 @@ if (parsedTutors !== null){
   new Tutor('Steph', '2065798587','email@any.com','math','high school', 'www.google.com', 'I am helpful!');
   new Tutor('Tif', '2065798587','email@any.com','math','high school', 'www.google.com', 'I am helpful!');
   new Tutor('Michael', '2065798587','email@any.com','math','high school', 'www.google.com', 'I am the most helpful of all and good at subjects for all grade levels!');
+  new Tutor('Tif', '2065798587','email@any.com','math','high school', 'www.google.com', 'I am helpful!');
+  new Tutor('Michael', '2065798587','email@any.com','math','high school', 'www.google.com', 'I am the most helpful of all and good at subjects for all grade levels!');
+  new Tutor('Steph', '2065798587','email@any.com','math','high school', 'www.google.com', 'I am helpful!');
+  new Tutor('Tif', '2065798587','email@any.com','math','high school', 'www.google.com', 'I am helpful!');
+  new Tutor('Michael', '2065798587','email@any.com','math','high school', 'www.google.com', 'I am the most helpful of all and good at subjects for all grade levels!');
+  new Tutor('Tif', '2065798587','email@any.com','math','high school', 'www.google.com', 'I am helpful!');
+  new Tutor('Michael', '2065798587','email@any.com','math','high school', 'www.google.com', 'I am the most helpful of all and good at subjects for all grade levels!');
 
   // new Tutor(more tutors);
 
   setTutorLocalStorage();
-}
-
-// =============  Form Section  =============
-
-function submitEventHandler(event) {
-  event.preventDefault();
-
-  var tutorName = event.target.tutorName.value;
-  var tutorPhone = event.target.tutorPhone.value;
-  var tutorEmail = event.target.tutorEmail.value;
-  var tutorSubject = event.target.tutorSubject.value;
-  var tutorLevel = event.target.tutorLevel.value;
-  var tutorWebsite = event.target.tutorWebsite.value;
-  var tutorDesc = event.target.tutorDesc.value;
-
-  new Tutor(tutorName, tutorPhone, tutorEmail, tutorSubject, tutorLevel, tutorWebsite, tutorDesc);
-
-  sayThankYou();
-  setTutorLocalStorage(); // TODO: added a verb to function that was listed in GH Projects, announce/buy-in.
-}
-
-function sayThankYou() {
-  var target = document.getElementById('confirmation-registration');
-  target.textContent = 'Your registration information has been received.  Thank you for signing up to help today\'s youth successfully learn in this new and different environment.  You\'re help will be greatly appreciated!';
 }
 
 function setTutorLocalStorage() {

@@ -257,6 +257,8 @@ legend {
   border: rgba(88, 28, 33, 0.847) groove 20px;
   display: flex;
   justify-content: center;
+  overflow: auto;
+  height: 500px;
 }
 
 #tableOfTutors {

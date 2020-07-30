@@ -32,7 +32,29 @@ Resource.prototype.renderResourceInTheTable = function() {
         var resourceCell = document.createElement('td');
 
         // step 2.5: put contents into newly created row element
-        resourceCell.textContent = Resource.arrayOfResources[i][resourceProp[j]];
+        
+        if (j === 0 || j === 1) {
+          resourceCell.textContent = Resource.arrayOfResources[i][resourceProp[j]];
+        } else {
+          var a = document.createElement('a');
+
+          var link = document.createTextNode('Website');
+
+          a.appendChild(link);
+
+          a.title = 'Website';
+
+          a.href = Resource.arrayOfResources[i][resourceProp[j]];
+
+          resourceCell.appendChild(a);
+        }
+        
+        
+        
+        
+        
+        
+        
         resourceRow.appendChild(resourceCell);
       }
       // step 3 of creating the row, is to append the row to the table
@@ -89,15 +111,15 @@ function handleClickOnPic(event) {
 // ====================== Function Calls ========================
 // ================= Resouce Object Instantiation ==============
 
-new Resource ('Kids In Need Foundation','The Kids In Need Foundation’s mission is to ensure that every child is prepared to learn and succeed in the classroom by providing free school supplies nationally to students most in need.','<a href="https://www.kinf.org/">Link</a>','supplies');
-new Resource ('Share the Warmth','Hosts an ansdfsarents to purchase school supplies for their children at a nominal cost.','<a href="https://sharethewarmth.ca/what-we-do/school-supplies/">Link</a>','supplies');
-new Resource ('Discount School Supply','Their focus is the highest quality products at the lowest possible prices, supported by an extraordinary level of service.','<a href="https://www.discountschoolsupply.com/">Link</a>','supplies');
-new Resource ('Staples','Retail office supply store.','<a href="https://www.staples.com/deals/School-Supplies/BI783896">Link</a>','supplies');
-new Resource ('Target','Retail store.','<a href="https://www.target.com/c/school-office-supplies/-/N-5xsxr">Link</a>','supplies');
+new Resource ('Kids In Need Foundation','The Kids In Need Foundation’s mission is to ensure that every child is prepared to learn and succeed in the classroom by providing free school supplies nationally to students most in need.','https://www.kinf.org/','supplies');
+new Resource ('Share the Warmth','Hosts an ansdfsarents to purchase school supplies for their children at a nominal cost.','https://sharethewarmth.ca/what-we-do/school-supplies/','supplies');
+new Resource ('Discount School Supply','Their focus is the highest quality products at the lowest possible prices, supported by an extraordinary level of service.','https://www.discountschoolsupply.com/','supplies');
+new Resource ('Staples','Retail office supply store.','https://www.staples.com/deals/School-Supplies/BI783896','supplies');
+new Resource ('Target','Retail store.','https://www.target.com/c/school-office-supplies/-/N-5xsxr','supplies');
 
-new Resource ('Discunt School Supply','Home schoolroom furniture and supplies','<a href="https://www.discountschoolsupply.com/all-categories/school-supplies/teacher-supplies/hybrid-learning/c/offer_pphl0720">Link</a>','classroom');
-new Resource ('Pintrest Ideas','Ideas for setting up your child\'s working area','<a href="https://www.pinterest.com/teachers/homeschool/">Link</a>','classroom');
-new Resource ('Khan Academy','Free online educational resource targeting numerous educational subjects','<a href="https://www.khanacademy.org/">Link</a>','classroom');
+new Resource ('Discunt School Supply','Home schoolroom furniture and supplies','https://www.discountschoolsupply.com/all-categories/school-supplies/teacher-supplies/hybrid-learning/c/offer_pphl0720','classroom');
+new Resource ('Pintrest Ideas','Ideas for setting up your child\'s working area','https://www.pinterest.com/teachers/homeschool/','classroom');
+new Resource ('Khan Academy','Free online educational resource targeting numerous educational subjects', 'https://www.khanacademy.org/','classroom');
 
 // =================== Event Listener Domain =====================
 var resourcePicLinks = document.getElementById('resourceLinks');
