@@ -5,21 +5,49 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'chalk-sketch';
+  src: url('/css/fonts/kgblankspacesketch-webfont.woff2') format('woff2'),
+       url('/css/fonts/kgblankspacesketch-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'chalk-regular';
+  src: url('/css/fonts/kgblankspacesolid-webfont.woff2') format('woff2'),
+       url('/css/fonts/kgblankspacesolid-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
-  background-image: url("/img/backgroundChalk.jpg");
+  background-image: url("/img/green-chalkboard.jpg");
   background-size: 100%;
   margin: auto;
   width: 960px;
   color: wheat;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 header {
   /* display: flex; */
   /* flex-direction: row;
   justify-content: space-evenly; */
-  margin-top: 30px;
+  margin-top: 60px;
   
+}
+
+a {
+  font-family: 'chalk-regular', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: medium;
+  color: rgb(247, 213, 152);
+  text-decoration: none;
+}
+a:hover {
+  color: lightgoldenrodyellow;
 }
 
  /* header > nav > ul > li {
@@ -54,7 +82,7 @@ header {
 
 #rightnav > li{
   display: inline-block;
-  margin-right: 30px;
+  margin-right: 45px;
   margin-top: 65px;
 
 
@@ -68,7 +96,7 @@ nav > img {
   /* display: flex; */
   /* flex-direction: row; */
   /* justify-content: space-evenly;  */
-  margin-left: 100px;
+  margin-left: 75px;
   margin-right: 10px;
    
   
@@ -76,9 +104,10 @@ nav > img {
 
 #welcome > h1 {
   text-align: center;
-  font-size: 35px;
+  font-size: 48px;
   margin-top: 50px;
   margin-bottom: 30px;
+  font-family: 'chalk-sketch','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #welcomeP > p {
@@ -122,13 +151,14 @@ nav > img {
 }
 
 #resourceTable > p{
-  background-image: url('/img/chalkboardTable.jpg');
+  background-image: url('/img/black-chalkboard_2.jpg');
   width: 500px;
   height: 300px;
   position: absolute;
   overflow: hidden;
   margin-left: 230px;
   margin-bottom: 30px;
+ 
    
 }
 
@@ -141,6 +171,17 @@ nav > img {
   margin-top: 10px;
   color: red;
 }
+
+/* =========== About Us CSS ========= */
+
+#teamProfile > ul > li > img{
+  height: 300px;
+  /* width: 250px; */
+  border-radius: 95px;
+}
+
+
+
 
 footer { 
   bottom: 0;
@@ -155,7 +196,7 @@ footer {
 }
 
 #contactInfo {
-  margin-top: 75px;
+  margin-top: 30px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
