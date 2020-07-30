@@ -33,11 +33,7 @@ body {
 }
 
 header {
-  /* display: flex; */
-  /* flex-direction: row;
-  justify-content: space-evenly; */
   margin-top: 60px;
-  
 }
 
 a {
@@ -46,60 +42,36 @@ a {
   color: rgb(247, 213, 152);
   text-decoration: none;
 }
+
 a:hover {
   color: lightgoldenrodyellow;
 }
 
- /* header > nav > ul > li {
-  display: inline-block; */
-  /* padding: 0 45px;  */
-  /* margin: 45px;
-  margin-top: 65px; 
-  outline: dotted 2px cornflowerblue;
-}  */
-
-
 #leftnav {
   float: left;
-  
- 
 }
 
 #leftnav > li{
   display: inline-block;
-  /* margin-left: 45px; */
   margin: 45px;
   margin-top: 65px;
-
-
 }
 
 #rightnav {
   float: right;
-  
-    
 }
 
 #rightnav > li{
   display: inline-block;
   margin-right: 45px;
   margin-top: 65px;
-
-
 }
-
 
 nav > img {
   height: 150px;
   border-radius: 35px;
-  /* padding: 0 50px; */
-  /* display: flex; */
-  /* flex-direction: row; */
-  /* justify-content: space-evenly;  */
   margin-left: 75px;
   margin-right: 10px;
-   
-  
 }
 
 #welcome > h1 {
@@ -114,7 +86,12 @@ nav > img {
   text-align: justify;
   width: 700px;
   margin: auto; 
+  line-height: 1.5em;
   margin-bottom: 30px;
+  font-family: "chalk-regular", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: small;
+  font-style: normal;
+  margin-top: 50px;
 }
 
 #resourceLinks ul {
@@ -125,41 +102,90 @@ nav > img {
 }
 
 #suppliesImg {
-  width: 75px;
-  height: 75px;
-  border-radius: 45px;
-  border: black 2px outset;
+  /* width: auto;
+  height: 115px; */
+  width: 115px;
+  height: auto;
+  border-radius: 50%;
+  border: green 2px outset;
 }
+/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_fade */
+/* .container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+ */
+
+
+
+
+
+
 #classroomImg {
-  width: 75px;
-  height: 75px;
-  border-radius: 45px;
-  border: black 2px outset;
+  /* width: auto;
+  height: 115px; */
+  width: 115px;
+  height: auto;
+  border-radius: 50%;
+  border: green 2px outset;
 }
 
 #activitiesImg {
-  width: 75px;
-  height: 75px;
-  border-radius: 45px;
-  border: black 2px outset;
+  /* width: auto;
+  height: 115px; */
+  width: 115px;
+  height: auto;
+  border-radius: 50%;
+  border: green 2px outset;
 }
 
 #resourceTable{
-  height: 300px;
-  margin-bottom: 30px;
+  background-image: url("/img/black-chalkboard_2.jpg");
+  background-repeat: none;
+  background-size: 100%;
+  height: 600px;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 900px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
   
-}
-
-#resourceTable > p{
-  background-image: url('/img/black-chalkboard_2.jpg');
-  width: 500px;
-  height: 300px;
-  position: absolute;
-  overflow: hidden;
-  margin-left: 230px;
-  margin-bottom: 30px;
- 
-   
 }
 
 #resourceTable > table {
@@ -174,25 +200,98 @@ nav > img {
 
 /* =========== About Us CSS ========= */
 
-#teamProfile > ul > li > img{
-  height: 300px;
-  /* width: 250px; */
-  border-radius: 95px;
+
+
+#aboutTeam > h1 {
+  font-family: "chalk-sketch", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: x-large;
+  font-weight: normal;
+  margin-top: 45px;
+  margin-bottom: 45px;
+  text-align: center;
+  
 }
 
+#teamProfile > div > p {
+  font-family: "chalk-regular", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: small;
+  font-weight: normal;
+}
 
+#teamProfile > div {
+  margin: 30px;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+}
 
+#Krystian > img {
+  height: 300px;
+  border-radius: 145px;
+ }
 
+#Krystian > p {
+  height: 150px;
+  margin: auto 0;
+  line-height: 1.5em;
+  text-align: justify;
+  width: 600px;
+  padding: 15px;
+}
+
+#Marchael > img {
+  height: 300px;
+  border-radius: 145px;
+}
+
+#Marchael > p {
+  height: 250px;
+  margin: auto 0;
+  line-height: 1.5em;
+  text-align: justify;
+  width: 600px;
+  padding: 15px;
+}
+
+#Michael > img {
+  height: 300px;
+  border-radius: 145px;
+}
+
+#Michael > p {
+  height: 200px;
+  margin: auto 0;
+  line-height: 1.5em;
+  text-align: justify;
+  width: 600px;
+  padding: 15px;
+}
+
+#Paul > img {
+  height: 300px;
+  border-radius: 145px;
+}
+
+#Paul > p {
+  height: 150px;
+  margin: auto 0;
+  line-height: 1.5em;
+  text-align: justify;
+  width: 600px;
+  padding: 15px;
+}
+/* =============== end about us CSS ======= */
+
+/* ============ Footer ===============*/
 footer { 
   bottom: 0;
 }
 
 #bottomNav{
-  margin-top: 30px;
+  margin-top: 80px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-
 }
 
 #contactInfo {
@@ -203,6 +302,28 @@ footer {
   margin-bottom: 75px;
 }
 
+/* =============== End of Footer ===========*/
+
+/* ========== Tutor Registration =========*/
+
+#tutorText {
+  font-family: "chalk-regular", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: small;
+  font-style: normal;
+  text-align: center;
+  margin-top: 50px;
+  line-height: 1.5em;
+}
+
+.pageTitle {
+  font-family: "chalk-regular", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: x-large;
+  font-weight: normal;
+}
+
+.pageDescription {
+  margin-top: 30px;
+}
 
 #tutor-registration-form {
   border: solid black 2px;
@@ -247,17 +368,42 @@ legend {
   /* width: 300px;  TODO: Make it more presentable with reduced width and confetti */
 }
 
+/* =========== End of Tutor Registration =====*/
+
+/* ============  Begin Tutor List =======*/
+
+#tlText > h1 {
+  font-family: "chalk-sketch", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: x-large;
+  font-style: normal;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#tlText > div > p {
+  font-family: "chalk-regular", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: small;
+  font-style: normal;
+  text-align: center;
+  margin-top: 50px;
+  line-height: 1.5em;
+}
+
 #tableContainer {
-  background-image: url("/img/chalkboardTable.jpg");
+  background-image: url("/img/black-chalkboard_2.jpg");
+  background-repeat: none;
+  background-size: 100%;
   height: 600px;
   margin: 0 auto;
   margin-top: 30px;
   width: 900px;
   padding: 20px;
-  border: rgba(88, 28, 33, 0.847) groove 20px;
   display: flex;
   justify-content: center;
+
 }
+
+
 
 #tableOfTutors {
   padding: 20px;
@@ -273,7 +419,6 @@ legend {
 #tableOfTutors td {
   padding: 5px;
   vertical-align: middle;
-
 }
 
 #tableOfTutors th {
