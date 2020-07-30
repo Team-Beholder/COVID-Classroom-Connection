@@ -132,7 +132,7 @@ nav > img {
    
 }
 
-table {
+#resourceTable > table {
   width: 400px;
   height: 250px;
   position: absolute;   
