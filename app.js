@@ -8,6 +8,7 @@ var tutorProp = ['tutorName', 'tutorPhone', 'tutorEmail', 'tutorSubject', 'tutor
 Resource.arrayOfResources = [];
 var resourceProperties = ['Resource Name', 'Description', 'Link'];
 var resourceProp = ['resourceName', 'resourceDesc', 'resourceLink', 'resourceTopic'];
+var resourcesToShow = '';
 
 
 // ********** Function Definitions **********
@@ -85,18 +86,12 @@ function Resource (resourceName, resourceDesc, resourceLink, resourceTopic) {
   Resource.arrayOfResources.push(this);
 }
 
-
-
-
-
-
 Resource.prototype.renderResourceTable = function() {
-
   // step 1 Find Target
   var targetTable = document.getElementById('resourceDataTable');
   // step 2 Create New Element (and also Step 1 of target for each table cell)
   for (var i = 0; i < Resource.arrayOfResources.length; i++) {
-    if (Resource.arrayOfResources[i].resourceTopic === 'supplies') {  // change sorting string to be varible by eventhandler
+    if (Resource.arrayOfResources[i].resourceTopic === resourcesToShow) {  // change sorting string to be varible by eventhandler
       var resourceRow = document.createElement('tr');
 
       for (var j = 0; j < resourceProp.length-1; j++) {
@@ -111,7 +106,6 @@ Resource.prototype.renderResourceTable = function() {
     }
   }
 };
-
 
 Resource.prototype.renderHeader = function() {
   // step 1 Find Target
@@ -136,9 +130,31 @@ Resource.prototype.renderHeader = function() {
   targetTable.appendChild(resourceRow);
 };
 
+var resourcePicLinks = document.getElementById('resourceLinks');
+resourcePicLinks.addEventListener('click', handleClickOnPic);
 
+function handleClickOnPic(event) {
+  switch (event.target.id) {
 
+    case 'suppliesImg':
+      resourcesToShow = 'supplies';
+      break;
+    
+    case 'classroomImg':
+      resourcesToShow = 'classroom';
+      break;
 
+    case 'activitiesImg':
+      resourcesToShow = 'activities';
+      break;
+  }
+
+  if (Resource.arrayOfResources.length > 0 && resourcesToShow !== '') {
+    Resource.arrayOfResources[0].renderHeader();
+    Resource.arrayOfResources[0].renderResourceTable();
+    // TODO: change misleading name of method.  Consider creating one general function to rule them all.
+  }
+};
 
 
 
@@ -187,12 +203,6 @@ new Resource ('Khan Academy','Free online educational resource targeting numerou
 //   Tutor.arrayOfTutors[0].renderTutorTable();
 //   // TODO: change misleading name of method.  Consider creating one general function to rule them all.
 // }
-
-if (Resource.arrayOfResources.length > 0) {
-  Resource.arrayOfResources[0].renderHeader();
-  Resource.arrayOfResources[0].renderResourceTable();
-  // TODO: change misleading name of method.  Consider creating one general function to rule them all.
-}
 
 
 // =============  Form Section  =============
