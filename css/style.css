@@ -483,6 +483,11 @@ legend {
 /* Source:https://css-tricks.com/tips-for-creating-great-web-forms/ */
 
 #confirmation-registration-container p {
+  line-height: 1.5em;
+  font-family: "chalk-regular", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  text-align: center;
   /* width: 300px;  TODO: Make it more presentable with reduced width and confetti */
 }
 
