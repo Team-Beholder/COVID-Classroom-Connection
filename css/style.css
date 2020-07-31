@@ -1,0 +1,605 @@
+/* ==================  Start of Home Page CSS ================*/
+
+* {
+  outline-offset: -1px;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'chalk-sketch';
+  src: url('/css/fonts/kgblankspacesketch-webfont.woff2') format('woff2'),
+       url('/css/fonts/kgblankspacesketch-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'chalk-regular';
+  src: url('/css/fonts/kgblankspacesolid-webfont.woff2') format('woff2'),
+       url('/css/fonts/kgblankspacesolid-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-image: url("/img/green-chalkboard.jpg");
+  /* background-size: 100%; */
+  background-size: cover;
+  margin: auto;
+  width: 960px;
+  color: wheat;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+header {
+  margin-top: 60px;
+}
+
+a {
+  font-family: 'chalk-regular', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: medium;
+  color: rgb(247, 213, 152);
+  text-decoration: none;
+}
+
+a:hover {
+  color: lightgoldenrodyellow;
+}
+
+#leftnav {
+  float: left;
+}
+
+#leftnav > li{
+  display: inline-block;
+  margin: 45px;
+  margin-top: 65px;
+}
+
+#rightnav {
+  float: right;
+}
+
+#rightnav > li{
+  display: inline-block;
+  margin-right: 45px;
+  margin-top: 65px;
+}
+
+nav > img {
+  height: 150px;
+  border-radius: 35px;
+  margin-left: 75px;
+  margin-right: 10px;
+}
+
+#welcome > h1 {
+  text-align: center;
+  font-size: 48px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-family: 'chalk-sketch','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#welcomeP > p {
+  text-align: justify;
+  width: 700px;
+  margin: auto; 
+  line-height: 1.5em;
+  margin-bottom: 30px;
+  font-family: "chalk-regular", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  margin-top: 50px;
+}
+
+#resourceLinks ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+}
+
+#resourceLinks > ul > li > p {
+  font-family: "chalk-regular", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  position: relative;
+  right: 20px;
+}
+
+#supplyP {
+  margin-top: 10px;
+  margin-left: 35px;
+}
+
+#classroomP {
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+#activitiesP {
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+#suppliesImg {
+  /* width: auto;
+  height: 115px; */
+  width: 115px;
+  height: auto;
+  border-radius: 50%;
+  border: green 2px outset;
+}
+
+
+.image {
+  width: 441px;
+  height: 248px;
+  background: url(/img/supplies.jpg) no-repeat;
+}
+
+.image:hover {
+  opacity: 0.3;
+  -moz-box-shadow: 0 0 10px #ccc;
+  -webkit-box-shadow: 0 0 10px #ccc;
+  box-shadow: 0 0 10px #ccc;
+}
+
+/* http://www.corelangs.com/css/box/hover.html */
+
+#classroomImg {
+  /* width: auto;
+  height: 115px; */
+  width: 115px;
+  height: auto;
+  border-radius: 50%;
+  border: green 2px outset;
+}
+
+.classroom {
+  width: 441px;
+  height: 248px;
+  background: url(/img/diyclassroom.jpg) no-repeat;
+}
+
+.classroom:hover {
+  opacity: 0.3;
+  -moz-box-shadow: 0 0 10px #ccc;
+  -webkit-box-shadow: 0 0 10px #ccc;
+  box-shadow: 0 0 10px #ccc;
+}
+
+#activitiesImg {
+  /* width: auto;
+  height: 115px; */
+  width: 115px;
+  height: auto;
+  border-radius: 50%;
+  border: green 2px outset;
+}
+
+.activities {
+  width: 441px;
+  height: 248px;
+  background: url(/img/activities.jpg) no-repeat;
+}
+
+.activities:hover {
+  opacity: 0.3;
+  -moz-box-shadow: 0 0 10px #ccc;
+  -webkit-box-shadow: 0 0 10px #ccc;
+  box-shadow: 0 0 10px #ccc;
+}
+
+#welcomeMessageContainer {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#welcomeMessage {
+  font-size: 60pt;
+  /* position: relative; */
+  /* bottom: 50px; */
+  transform: rotate(-10deg)
+            skew(-10deg);
+  font-family: 'chalk-sketch', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: wheat;
+  text-decoration: none;
+  line-height: 1.5em;
+}
+
+#strikeThrough {
+  text-decoration: line-through;
+  }
+
+#resourceTable {
+  background-image: url("/img/black-chalkboard_2.jpg");
+  background-repeat: none;
+  background-size: 100%;
+  height: 600px;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 900px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  line-height: 1.2em;
+
+}
+
+/* Contains formatting done by Paul for Resource Table (keep?) (start)*/
+
+#resourceTable th, #resourceTable td {
+  border: solid white 3px;
+  border-collapse: collapse;
+  color: white;
+}
+
+#resourceTable td {
+  padding: 6px;
+  vertical-align: middle;
+}
+
+#resourceTable th {
+  font-weight: bold;
+  padding: 10px;
+  vertical-align: middle;
+  font-size: 15pt;
+}
+
+/* Contains formatting done by Paul for Resource Table (keep?) (end)*/
+
+
+#resourceTableChalkBoard {
+  height: 475px;
+  margin-top: 40px;
+  width: 775px;
+}
+
+#resourceDataTable {
+  width: 775px; 
+}
+
+#resourceTable > table {
+  width: 400px;
+  height: 250px;
+  position: absolute;   
+  z-index: 10; 
+  margin-left: 265px;
+  margin-top: 10px;
+  color: red;
+}
+
+/* =========== About Us CSS ========= */
+
+
+
+#aboutTeam > h1 {
+  font-family: "chalk-sketch", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 46px;
+  font-weight: normal;
+  margin-top: 45px;
+  margin-bottom: 45px;
+  text-align: center;
+  
+}
+
+#teamProfile > div > p {
+  /* font-family: "chalk-regular", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  /* font-size: 15px; */
+  /* font-weight: normal; */
+  /* margin-bottom: 30px; */
+  text-align: justify;
+  width: 750px;
+  margin: auto; 
+  line-height: 1.5em;
+  font-family: "chalk-regular", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  margin-top: 10px;
+
+
+}
+
+#teamProfile > div {
+  margin: 30px;
+  height: 350px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  
+  /* outline: 2px dashed blue; */
+}
+
+#Krystian > img {
+  margin-top: 30px;
+  height: 300px;
+  border-radius: 145px;
+  /* outline: chartreuse 2px dotted; */
+ }
+
+#Krystian > p {
+  height: 150px;
+  /* margin: auto 0; */
+  margin-top: 80px;
+  line-height: 1.5em;
+  text-align: justify;
+  width: 600px;
+  padding: 15px;
+}
+#Marchael > img {
+  margin-top: 60px;
+  height: 300px;
+  border-radius: 145px;
+}
+
+#Marchael > p {
+  height: auto;
+  margin: auto 0;
+  line-height: 1.5em;
+  text-align: justify;
+  width: 600px;
+  padding: 15px;
+}
+
+#Michael > img {
+  margin-top: 60px;
+  height: 300px;
+  border-radius: 145px;
+}
+
+#Michael > p {
+  height: 200px;
+  margin: auto 0;
+  line-height: 1.5em;
+  text-align: justify;
+  width: 600px;
+  padding: 15px;
+}
+
+#Paul > img {
+  margin-top: 25px;
+  height: 300px;
+  border-radius: 145px;
+}
+
+#Paul > p {
+  height: 150px;
+  margin: auto 0;
+  line-height: 1.5em;
+  text-align: justify;
+  width: 600px;
+  padding: 15px;
+}
+
+/* =============== end about us CSS ======= */
+
+/* ============ Footer ===============*/
+footer { 
+  bottom: 0;
+}
+
+#bottomNav{
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#contactInfo {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 75px;
+}
+
+/* =============== End of Footer ===========*/
+
+/* ========== Tutor Registration =========*/
+/* 
+#tutorText {
+  font-family: "chalk-regular", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: small;
+  font-style: normal;
+  text-align: center;
+  margin-top: 50px;
+  line-height: 1.5em;
+} */
+
+/* #tutorText > h1 {
+text-align: center;
+  font-size: 48px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-family: 'chalk-sketch','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} */
+
+.pageTitle  {
+  font-family: "chalk-sketch", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 46px;
+  font-weight: normal;
+  margin-top: 45px;
+  margin-bottom: 45px;
+  text-align: center;
+  
+}
+
+.pageDescription {
+  text-align: justify;
+  text-align: center;
+  width: 750px;
+  margin: auto; 
+  line-height: 1.5em;
+  font-family: "chalk-regular", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  margin-top: 10px;
+}
+
+#tutor-registration-form {
+  border: groove rgb(214, 158, 52) 10px;
+  border-radius: 10px;
+  width: 65%;
+  margin: 0px auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+legend, #button {
+  text-align: center;
+}
+
+legend {
+  font-weight: bold;
+  padding: 10px 0px 10px 0px;
+}
+
+#tutor-registration-form > fieldset > div {
+  margin: 10px 0px 10px 0px; 
+}
+
+#tutor-registration-form > fieldset > div > input {
+  width: 350px;
+}
+
+#tutor-registration-form > fieldset > #button > input {
+  width: 70px;
+}
+
+#tutor-registration-form > fieldset > div > label {
+  float: left;
+  text-align: right;
+  margin-right: 15px;
+  width: 150px;
+}
+
+/* Source:https://css-tricks.com/tips-for-creating-great-web-forms/ */
+
+#confirmation-registration-container p {
+  line-height: 1.5em;
+  font-family: "chalk-regular", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  text-align: center;
+  /* width: 300px;  TODO: Make it more presentable with reduced width and confetti */
+}
+
+/* =========== End of Tutor Registration =====*/
+
+/* ============  Begin Tutor List =======*/
+
+#tlText > h1 {
+  /* font-family: "chalk-sketch", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: x-large;
+  font-style: normal;
+  text-align: center;
+  margin-top: 50px; */
+  font-family: "chalk-sketch", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 46px;
+  font-weight: normal;
+  margin-top: 45px;
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+#tlText > div > p {
+  /* font-family: "chalk-regular", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  text-align: center;
+  margin-top: 50px;
+  line-height: 1.5em; */
+  text-align: justify;
+  text-align: center;
+  width: 750px;
+  margin: auto; 
+  line-height: 1.5em;
+  font-family: "chalk-regular", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  margin-top: 10px;
+
+}
+
+#realTutors {
+  display: flex;
+  justify-content: center;
+}
+
+.realtutorLinks {
+  margin: 15px 30px 30px 30px;
+  text-decoration: underline;
+}
+
+
+
+#tutorTableChalkBoard {
+  background-image: url("/img/black-chalkboard_2.jpg");
+  background-repeat: none;
+  background-size: 100%;
+  height: 650px;
+}
+
+#tableContainer {
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 865px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+  height: 540px;
+  position: relative;
+  top: 50px;
+}
+
+
+
+#tableOfTutors {
+  margin: 0px 20px 20px 35px;
+  width: 775px;
+  height: 100px;
+}
+
+#tableOfTutors, #tableOfTutors th, #tableOfTutors td {
+  border: solid white 3px;
+  border-collapse: collapse;
+  color: white;
+}
+
+#tableOfTutors td {
+  padding: 3px;
+  vertical-align: middle;
+}
+
+#tableOfTutors th {
+  font-weight: bold;
+  padding: 5px;
+  vertical-align: middle;
+  font-size: 15pt;
+}
+
+#threePics {
+  margin: 40px;
+}
+
+#threePics ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.tutorImage {
+  width: 225px;
+  border-radius: 50%;
+  border: green 2px outset;
+}
+
+/* ============= CSS RULES FOR TUTOR TABLE LIST PAGE (END) =========== */

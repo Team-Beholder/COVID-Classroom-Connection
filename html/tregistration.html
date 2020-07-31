@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Be a Tutor</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul id="leftnav">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="/html/aboutus.html">About Us</a></li>
+      </ul>
+      <img src="/img/logo2.png" alt="woman at desk with child">
+      <ul id="rightnav">
+        <li><a href="/html/tutorlist.html">Find a Tutor</a></li>
+        <li><a href="/html/tregistration.html">Be a Tutor</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id = "tutorText">
+    <div>
+      <h1 class="pageTitle">Tutor Registration Form</h1>
+    </div>
+    <div>
+      <p class="pageDescription">Thank you for volunteering as a tutor! <br>Your help is greatly appreciated. Selected your level and <br>subject below to be registered in our list of tutors.</p>
+    </div>
+    <div>
+      <form id="tutor-registration-form">
+        <fieldset>
+          <legend>Registration Form</legend>
+          <div>
+            <label for="tutorName">Name: </label>
+            <input type="text"  name="tutorName" required  minlength="2"></input>
+          </div>
+          
+          <div>
+            <label for="tutorPhone">Phone Number: </label>
+            <input type="text"  name="tutorPhone"></input>
+          </div>
+          
+          <div>
+            <label for="tutorEmail">Email: </label>
+            <input type="text"  name="tutorEmail"></input>
+          </div>
+          
+          <div>
+            <label  for="tutorSubject">Subject: </label>
+            <!-- Change to drop down option   -->
+            <input type="text"  name="tutorSubject" required   minlength="2"></input>
+          </div>
+          
+          <div>
+            <label for="tutorLevel">Level: </label>
+            <input type="text"  name="tutorLevel" required   minlength="2"></input>
+          </div>
+          
+          <div>
+            <label for="tutorWebsite">Website: </label>
+            <input type="text"  name="tutorWebsite" required   minlength="2"></input>
+          </div>
+          
+          <div>
+            <label  for="tutorDesc">Description: </label>
+            <input type="text"  name="tutorDesc"></input>
+          </div>
+          
+          <div id="button">
+            <input type="submit"  value="Register" id="submit">
+          </div>
+
+        </fieldset>
+      </form>
+    </div>
+
+    <div id="confirmation-registration-container">
+      <p id="confirmation-registration"></p>
+    </div>
+  </main>
+
+  <footer>
+    <ul id="bottomNav">
+      <li><a href="/html/tutorlist.html">Find a Tutor</a></li>
+      <li><a href="/html/tregistration.html">Tutor Registration</a></li>
+      <li><a href="/html/aboutus.html">About Us</a></li>
+    </ul>
+    <ul id = "contactInfo">
+      <li><a href ="https://github.com/KrystianFH" target ="blank">Krystian Francuz-Harris</a></li>
+      <li><a href ="https://github.com/kuya32" target ="blank">Marchael Acode</a></li>
+      <li><a href ="https://github.com/DaddyBearSEA" target ="blank">Michael Mandell</a></li>
+      <li><a href ="https://github.com/paul-leonard" target ="blank">Paul Leonard</a></li>
+    </ul>
+  </footer>
+  <script src="../js/app.js"></script>
+  <script src="../js/tutorForm.js"></script>
+</body>
+</html>
