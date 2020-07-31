@@ -32,7 +32,8 @@ Resource.prototype.renderResourceInTheTable = function() {
         var resourceCell = document.createElement('td');
 
         // step 2.5: put contents into newly created row element
-        
+
+              
         if (j === 0 || j === 1) {
           resourceCell.textContent = Resource.arrayOfResources[i][resourceProp[j]];
         } else {
@@ -40,7 +41,8 @@ Resource.prototype.renderResourceInTheTable = function() {
           var link = document.createTextNode('Website');
           a.appendChild(link);
           a.title = 'Website';
-          a.href = Resource.arrayOfResources[i][resourceProp[j]];
+          a.href = Resource.arrayOfResources[i][resourceProp[j]]; 
+          a.target = '_blank';          
           resourceCell.appendChild(a);
         }
         resourceRow.appendChild(resourceCell);
@@ -108,6 +110,18 @@ new Resource ('Target','Retail store.','https://www.target.com/c/school-office-s
 new Resource ('Discunt School Supply','Home schoolroom furniture and supplies','https://www.discountschoolsupply.com/all-categories/school-supplies/teacher-supplies/hybrid-learning/c/offer_pphl0720','classroom');
 new Resource ('Pintrest Ideas','Ideas for setting up your child\'s working area','https://www.pinterest.com/teachers/homeschool/','classroom');
 new Resource ('Khan Academy','Free online educational resource targeting numerous educational subjects', 'https://www.khanacademy.org/','classroom');
+
+new Resource ('Hunker Design', 'Having the kids home from school is taking on new meaning these days. As parents and caregivers, we are all invested in educating our children and providing safe and fun learning environments for them.', 'https://www.hunker.com/13725700/teacher-tips-create-classroom-at-home', 'classroom');
+new Resource ('USA Today - Tech', 'Whether it\’s a dog bed, bathtub, kitchen counter, or actual desk, create a space for your child to tackle his or her school assignments free of as many distractions as possible.', 'https://www.usatoday.com/story/tech/columnist/2020/03/31/how-to-make-home-workable-school-during-covid-19-crisis/5077629002/', 'classroom');
+new Resource ('The Simple Homeschooler', 'I have a successful homeschool – and I know most of that is not required. There are many homeschools that don’t have a classroom at all!', 'https://www.thesimplehomeschooler.com/how-to-set-up-a-simple-homeschool-classroom/', 'classroom');
+new Resource ('Mommy Poppins', 'Written by local parents who love to seek out the coolest, off-the-beaten-track things to do with kids, Mommy Poppins shares activities that aren\'t just pleasant time passers, but promise enriching experiences for your family.', 'https://mommypoppins.com/family/coronavirus-pandemic-update-indoor-activities-resources-kids', 'activities');
+new Resource ('Gundersen Health System', 'Children learn best through play where their imaginations can grow. However, the task of staying active and engaged with our children for weeks, and possibly months, seems daunting. To make it even more challenging, parents aren\'t always able to get out to stores to find supplies.', 'https://mommypoppins.com/family/coronavirus-pandemic-update-indoor-activities-resources-kids', 'activities');
+new Resource ('Mayo Clinic', 'Despite the changes caused by the COVID-19 pandemic, there\'s still plenty of fun to be had. In fact, seeking out fun activities may be even more important now. Doing something you enjoy can distract you from problems and help you cope with life\'s challenges', 'https://www.mayoclinic.org/diseases-conditions/coronavirus/in-depth/safe-activities-during-covid19/art-20489385', 'activities');
+new Resource ('Business Insider', 'The best free online activities to keep you kids occupied, happy, and healthy while stuck at home during the coronavirus pandemic', 'https://www.businessinsider.com/online-activities-to-occupy-kids-during-quarantine-coronavirus-pandemic-2020-4', 'activities');
+new Resource ('LA Times', 'With schools closed across the country and millions of parents working from home for the foreseeable future because of the coronavirus outbreak, it\’s inevitable that children will consume more television in the coming weeks.', 'https://www.latimes.com/entertainment-arts/tv/story/2020-03-17/shows-for-kids-netflix-amazon-hulu-pbs-quarantine', 'activities' );
+
+
+
 
 // =================== Event Listener Domain =====================
 var resourcePicLinks = document.getElementById('resourceLinks');
