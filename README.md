@@ -9,3 +9,13 @@
 ## Resources 
 - Used [get event id](https://stackoverflow.com/questions/14422898/how-to-get-an-elements-id-from-event-target) within our event listener for the home page images.
 - [Rendered hyperlink inside an HTML table that is written by JavaScript code](https://www.geeksforgeeks.org/how-to-create-a-link-in-javascript/) 
+
+- [Fonts provided for free personal use by](http://www.kimberlygeswein.com/) - Chalk type font face
+- [CSS Tricks](https://css-tricks.com/)
+- [Shutter Stock](https://shutter.com)
+- [AWW APP](http://www.awwapp.com)
+- [Gliffy](https://go.gliffy.com/go/html5/launch)
+- [Smart Draw](https://www.smartdraw.com/)
+
+
+# We would like to thank Nicholas and all his AWESOME TA's!
