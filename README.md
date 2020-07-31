@@ -22,3 +22,4 @@
 
 # We would like to thank Nicholas and all his AWESOME TA's!
 
+ - [Google Project Directory](https://drive.google.com/drive/folders/1zdllAbLmnQGiD4e63FjT6Th1sjpmGYwd?usp=sharing)
