@@ -188,6 +188,16 @@ nav > img {
   
 }
 
+#resourceTableChalkBoard {
+  height: 475px;
+  margin-top: 40px;
+  width: 775px;
+}
+
+#resourceDataTable {
+  width: 775px; 
+}
+
 #resourceTable > table {
   width: 400px;
   height: 250px;
@@ -326,7 +336,7 @@ footer {
 }
 
 #tutor-registration-form {
-  border: solid black 2px;
+  border: groove rgb(214, 158, 52) 10px;
   border-radius: 10px;
   width: 65%;
   margin: 0px auto;
@@ -389,26 +399,32 @@ legend {
   line-height: 1.5em;
 }
 
-#tableContainer {
+#tutorTableChalkBoard {
   background-image: url("/img/black-chalkboard_2.jpg");
   background-repeat: none;
   background-size: 100%;
-  height: 600px;
+  height: 650px;
+}
+
+#tableContainer {
   margin: 0 auto;
   margin-top: 30px;
-  width: 900px;
+  width: 865px;
   padding: 20px;
   display: flex;
   justify-content: center;
   overflow: auto;
-  height: 500px;
+  height: 540px;
+  position: relative;
+  top: 50px;
 }
 
 
 
 #tableOfTutors {
-  padding: 20px;
-  width: 830px;
+  margin: 0px 20px 20px 35px;
+  width: 775px;
+  height: 100px;
 }
 
 #tableOfTutors, #tableOfTutors th, #tableOfTutors td {
@@ -436,7 +452,13 @@ legend {
 #threePics ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
+}
+
+.tutorImage {
+  width: 225px;
+  border-radius: 50%;
+  border: green 2px outset;
 }
 
 /* ============= CSS RULES FOR TUTOR TABLE LIST PAGE (END) =========== */
