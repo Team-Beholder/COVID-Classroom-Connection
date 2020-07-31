@@ -204,8 +204,8 @@ nav > img {
 
 #welcomeMessage {
   font-size: 60pt;
-  position: relative;
-  bottom: 50px;
+  /* position: relative; */
+  /* bottom: 50px; */
   transform: rotate(-10deg)
             skew(-10deg);
   font-family: 'chalk-sketch', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -530,7 +530,10 @@ legend {
 
 .realtutorLinks {
   margin: 15px 30px 30px 30px;
+  text-decoration: underline;
 }
+
+
 
 #tutorTableChalkBoard {
   background-image: url("/img/black-chalkboard_2.jpg");
