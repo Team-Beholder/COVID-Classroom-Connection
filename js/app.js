@@ -103,18 +103,16 @@ if (parsedTutors !== null){
   }
 
 } else {
-  new Tutor('Steph', '2065798587','email@any.com','math','high school', 'www.google.com', 'I am helpful!');
-  new Tutor('Tif', '2065961673','email@any.com','math','high school', 'www.google.com', 'I am helpful!');
-  new Tutor('Kirby', '206839651','email@any.com','math','high school', 'www.google.com', 'I am the most helpful of all and good at subjects for all grade levels!');
-  new Tutor('Brandon', '2065798587','email@any.com','math','high school', 'www.google.com', 'I am helpful!');
-  new Tutor('Philip', '2065798587','email@any.com','math','high school', 'www.google.com', 'I am the most helpful of all and good at subjects for all grade levels!');
-  new Tutor('Diddy', '2065798587','email@any.com','math','high school', 'www.google.com', 'I am helpful!');
-  new Tutor('Terra', '2065798587','email@any.com','math','high school', 'www.google.com', 'I am helpful!');
-  new Tutor('Mario', '2065798587','email@any.com','math','high school', 'www.google.com', 'I am the most helpful of all and good at subjects for all grade levels!');
-  new Tutor('Drake', '2065798587','email@any.com','math','high school', 'www.google.com', 'I am helpful!');
-  new Tutor('Cloud', '2065798587','email@any.com','math','high school', 'www.google.com', 'I am the most helpful of all and good at subjects for all grade levels!');
-
-  // new Tutor(more tutors);
+  new Tutor('Steph', '555-579-8587','email@any.com','math','high school', 'www.google.com', 'I am helpful!');
+  new Tutor('Tif', '555-596-1673','email@any.com','english','high school', 'www.google.com', 'I am more than happy to help.');
+  new Tutor('Kirby', '555-839651','email@any.com','math','middle school', 'www.google.com', 'I am the most helpful of all and good at subjects for all grade levels!');
+  new Tutor('Brandon', '555-5798587','email@any.com','reading','elementary', 'www.google.com', 'I like to tutor.');
+  new Tutor('Philip', '555-5798587','email@any.com','geography','high school', 'www.google.com', 'I\'m a retired teacher:)');
+  new Tutor('Diddy', '555-5798587','email@any.com','math','middle school', 'www.google.com', 'I am helpful!');
+  new Tutor('Terra', '555-5798587','email@any.com','science','high school', 'www.google.com', 'I\m great at science projects!');
+  new Tutor('Mario', '555-5798587','email@any.com','spelling','elementary', 'www.google.com', 'I am the most helpful of all and good at subjects for all grade levels!');
+  new Tutor('Drake', '555-5798587','email@any.com','math','high school', 'www.google.com', 'I am helpful!');
+  new Tutor('Cloud', '555-5798587','email@any.com','reading','middle school', 'www.google.com', 'I am the most helpful of all and good at subjects for all grade levels!');
 
   setTutorLocalStorage();
 }
