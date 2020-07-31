@@ -23,7 +23,8 @@
 
 body {
   background-image: url("/img/green-chalkboard.jpg");
-  background-size: 100%;
+  /* background-size: 100%; */
+  background-size: cover;
   margin: auto;
   width: 960px;
   color: wheat;
@@ -173,6 +174,30 @@ nav > img {
   border-radius: 50%;
   border: green 2px outset;
 }
+
+#welcomeMessageContainer {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#welcomeMessage {
+  font-size: 65pt;
+  transform: rotate(-20deg)
+            skew(-20deg);
+  font-family: 'chalk-sketch', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  /* color: rgb(247, 213, 152); */
+  /* text-transform: uppercase; */
+  color: rgb(229, 222, 209);
+  text-decoration: none;
+  line-height: 1.5em;
+}
+
+#strikeThrough {
+  text-decoration: line-through;
+  }
 
 #resourceTable{
   background-image: url("/img/black-chalkboard_2.jpg");
@@ -389,15 +414,27 @@ legend {
   line-height: 1.5em;
 }
 
-#tableContainer {
+#realTutors {
+  margin-top: 15px;
+}
+
+#realTutors li {
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+}
+
+#tutorTableChalkBoard {
   background-image: url("/img/black-chalkboard_2.jpg");
   background-repeat: none;
   background-size: 100%;
+}
+
+#tableContainer {
   height: 600px;
   margin: 0 auto;
   margin-top: 30px;
-  width: 900px;
-  padding: 20px;
+  width: 870px;
+  padding: 60px 120px 60px 120px;
   display: flex;
   justify-content: center;
   overflow: auto;
@@ -418,7 +455,7 @@ legend {
 }
 
 #tableOfTutors td {
-  padding: 5px;
+  padding: 3px;
   vertical-align: middle;
 }
 
