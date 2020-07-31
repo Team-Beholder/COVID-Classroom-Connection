@@ -133,53 +133,22 @@ nav > img {
   border-radius: 50%;
   border: green 2px outset;
 }
-/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_fade */
 
-/* .container {
-  position: relative;
-  width: 50%;
-}
 
 .image {
-  display: block;
-  width: 100%;
-  height: auto;
+  width: 441px;
+  height: 248px;
+  background: url(/img/supplies.jpg) no-repeat;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
+.image:hover {
+  opacity: 0.3;
+  -moz-box-shadow: 0 0 10px #ccc;
+  -webkit-box-shadow: 0 0 10px #ccc;
+  box-shadow: 0 0 10px #ccc;
 }
 
-.container:hover .overlay {
-  opacity: 1;
-}
-
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-} */
-
-
-
-
-
-
+/* http://www.corelangs.com/css/box/hover.html */
 
 #classroomImg {
   /* width: auto;
@@ -190,6 +159,19 @@ nav > img {
   border: green 2px outset;
 }
 
+.classroom {
+  width: 441px;
+  height: 248px;
+  background: url(/img/diyclassroom.jpg) no-repeat;
+}
+
+.classroom:hover {
+  opacity: 0.3;
+  -moz-box-shadow: 0 0 10px #ccc;
+  -webkit-box-shadow: 0 0 10px #ccc;
+  box-shadow: 0 0 10px #ccc;
+}
+
 #activitiesImg {
   /* width: auto;
   height: 115px; */
@@ -197,6 +179,19 @@ nav > img {
   height: auto;
   border-radius: 50%;
   border: green 2px outset;
+}
+
+.activities {
+  width: 441px;
+  height: 248px;
+  background: url(/img/activities.jpg) no-repeat;
+}
+
+.activities:hover {
+  opacity: 0.3;
+  -moz-box-shadow: 0 0 10px #ccc;
+  -webkit-box-shadow: 0 0 10px #ccc;
+  box-shadow: 0 0 10px #ccc;
 }
 
 #welcomeMessageContainer {
@@ -214,10 +209,7 @@ nav > img {
   transform: rotate(-10deg)
             skew(-10deg);
   font-family: 'chalk-sketch', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  /* color: rgb(247, 213, 152); */
   color: wheat;
-  /* text-transform: uppercase; */
-  /* color: rgb(229, 222, 209); */
   text-decoration: none;
   line-height: 1.5em;
 }
