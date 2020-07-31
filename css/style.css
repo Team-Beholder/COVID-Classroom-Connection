@@ -90,7 +90,7 @@ nav > img {
   line-height: 1.5em;
   margin-bottom: 30px;
   font-family: "chalk-regular", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: small;
+  font-size: 18px;
   font-style: normal;
   margin-top: 50px;
 }
@@ -102,6 +102,29 @@ nav > img {
   margin-bottom: 30px;
 }
 
+#resourceLinks > ul > li > p {
+  font-family: "chalk-regular", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  position: relative;
+  right: 20px;
+}
+
+#supplyP {
+  margin-top: 10px;
+  margin-left: 35px;
+}
+
+#classroomP {
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+#activitiesP {
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
 #suppliesImg {
   /* width: auto;
   height: 115px; */
@@ -111,6 +134,7 @@ nav > img {
   border: green 2px outset;
 }
 /* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_fade */
+
 /* .container {
   position: relative;
   width: 50%;
@@ -149,8 +173,8 @@ nav > img {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
-}
- */
+} */
+
 
 
 
@@ -213,6 +237,16 @@ nav > img {
   
 }
 
+#resourceTableChalkBoard {
+  height: 475px;
+  margin-top: 40px;
+  width: 775px;
+}
+
+#resourceDataTable {
+  width: 775px; 
+}
+
 #resourceTable > table {
   width: 400px;
   height: 250px;
@@ -229,7 +263,7 @@ nav > img {
 
 #aboutTeam > h1 {
   font-family: "chalk-sketch", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: x-large;
+  font-size: 46px;
   font-weight: normal;
   margin-top: 45px;
   margin-bottom: 45px;
@@ -239,7 +273,7 @@ nav > img {
 
 #teamProfile > div > p {
   font-family: "chalk-regular", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: small;
+  font-size: 15px;
   font-weight: normal;
 }
 
@@ -351,7 +385,7 @@ footer {
 }
 
 #tutor-registration-form {
-  border: solid black 2px;
+  border: groove rgb(214, 158, 52) 10px;
   border-radius: 10px;
   width: 65%;
   margin: 0px auto;
@@ -407,45 +441,40 @@ legend {
 
 #tlText > div > p {
   font-family: "chalk-regular", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: small;
+  font-size: 18px;
   font-style: normal;
   text-align: center;
   margin-top: 50px;
   line-height: 1.5em;
 }
 
-#realTutors {
-  margin-top: 15px;
-}
-
-#realTutors li {
-  padding: 10px 10px 10px 10px;
-  text-align: center;
-}
 
 #tutorTableChalkBoard {
   background-image: url("/img/black-chalkboard_2.jpg");
   background-repeat: none;
   background-size: 100%;
+  height: 650px;
 }
 
 #tableContainer {
-  height: 600px;
   margin: 0 auto;
   margin-top: 30px;
-  width: 870px;
-  padding: 60px 120px 60px 120px;
+  width: 865px;
+  padding: 20px;
   display: flex;
   justify-content: center;
   overflow: auto;
-  height: 500px;
+  height: 540px;
+  position: relative;
+  top: 50px;
 }
 
 
 
 #tableOfTutors {
-  padding: 20px;
-  width: 830px;
+  margin: 0px 20px 20px 35px;
+  width: 775px;
+  height: 100px;
 }
 
 #tableOfTutors, #tableOfTutors th, #tableOfTutors td {
@@ -473,7 +502,13 @@ legend {
 #threePics ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
+}
+
+.tutorImage {
+  width: 225px;
+  border-radius: 50%;
+  border: green 2px outset;
 }
 
 /* ============= CSS RULES FOR TUTOR TABLE LIST PAGE (END) =========== */
