@@ -7,23 +7,22 @@
 
 @font-face {
   font-family: 'chalk-sketch';
-  src: url('/css/fonts/kgblankspacesketch-webfont.woff2') format('woff2'),
-       url('/css/fonts/kgblankspacesketch-webfont.woff') format('woff');
+  src: url('fonts/kgblankspacesketch-webfont.woff2') format('woff2'),
+       url('fonts/kgblankspacesketch-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'chalk-regular';
-  src: url('/css/fonts/kgblankspacesolid-webfont.woff2') format('woff2'),
-       url('/css/fonts/kgblankspacesolid-webfont.woff') format('woff');
+  src: url('fonts/kgblankspacesolid-webfont.woff2') format('woff2'),
+       url('fonts/kgblankspacesolid-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 body {
-  background-image: url("/img/green-chalkboard.jpg");
-  /* background-size: 100%; */
+  background-image: url("../img/green-chalkboard.jpg");
   background-size: cover;
   margin: auto;
   width: 960px;
@@ -126,19 +125,16 @@ nav > img {
 }
 
 #suppliesImg {
-  /* width: auto;
-  height: 115px; */
   width: 115px;
   height: auto;
   border-radius: 50%;
   border: green 2px outset;
 }
 
-
 .image {
   width: 441px;
   height: 248px;
-  background: url(/img/supplies.jpg) no-repeat;
+  background: url(../img/supplies.jpg) no-repeat;
 }
 
 .image:hover {
@@ -151,8 +147,6 @@ nav > img {
 /* http://www.corelangs.com/css/box/hover.html */
 
 #classroomImg {
-  /* width: auto;
-  height: 115px; */
   width: 115px;
   height: auto;
   border-radius: 50%;
@@ -162,7 +156,7 @@ nav > img {
 .classroom {
   width: 441px;
   height: 248px;
-  background: url(/img/diyclassroom.jpg) no-repeat;
+  background: url(../img/diyclassroom.jpg) no-repeat;
 }
 
 .classroom:hover {
@@ -184,7 +178,7 @@ nav > img {
 .activities {
   width: 441px;
   height: 248px;
-  background: url(/img/activities.jpg) no-repeat;
+  background: url(../img/activities.jpg) no-repeat;
 }
 
 .activities:hover {
@@ -204,10 +198,8 @@ nav > img {
 
 #welcomeMessage {
   font-size: 60pt;
-  /* position: relative; */
-  /* bottom: 50px; */
   transform: rotate(-10deg)
-            skew(-10deg);
+             skew(-10deg);
   font-family: 'chalk-sketch', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: wheat;
   text-decoration: none;
@@ -219,7 +211,7 @@ nav > img {
   }
 
 #resourceTable {
-  background-image: url("/img/black-chalkboard_2.jpg");
+  background-image: url("../img/black-chalkboard_2.jpg");
   background-repeat: none;
   background-size: 100%;
   height: 600px;
@@ -230,10 +222,7 @@ nav > img {
   display: flex;
   justify-content: center;
   line-height: 1.2em;
-
 }
-
-/* Contains formatting done by Paul for Resource Table (keep?) (start)*/
 
 #resourceTable th, #resourceTable td {
   border: solid white 3px;
@@ -252,9 +241,6 @@ nav > img {
   vertical-align: middle;
   font-size: 15pt;
 }
-
-/* Contains formatting done by Paul for Resource Table (keep?) (end)*/
-
 
 #resourceTableChalkBoard {
   height: 475px;
@@ -278,8 +264,6 @@ nav > img {
 
 /* =========== About Us CSS ========= */
 
-
-
 #aboutTeam > h1 {
   font-family: "chalk-sketch", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 46px;
@@ -287,14 +271,9 @@ nav > img {
   margin-top: 45px;
   margin-bottom: 45px;
   text-align: center;
-  
 }
 
 #teamProfile > div > p {
-  /* font-family: "chalk-regular", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
-  /* font-size: 15px; */
-  /* font-weight: normal; */
-  /* margin-bottom: 30px; */
   text-align: justify;
   width: 750px;
   margin: auto; 
@@ -303,8 +282,6 @@ nav > img {
   font-size: 18px;
   font-style: normal;
   margin-top: 10px;
-
-
 }
 
 #teamProfile > div {
@@ -313,26 +290,23 @@ nav > img {
   height: auto;
   display: flex;
   flex-direction: row;
-  
-  /* outline: 2px dashed blue; */
 }
 
 #Krystian > img {
   margin-top: 30px;
   height: 300px;
   border-radius: 145px;
-  /* outline: chartreuse 2px dotted; */
- }
+}
 
 #Krystian > p {
   height: 150px;
-  /* margin: auto 0; */
   margin-top: 80px;
   line-height: 1.5em;
   text-align: justify;
   width: 600px;
   padding: 15px;
 }
+
 #Marchael > img {
   margin-top: 60px;
   height: 300px;
@@ -381,6 +355,7 @@ nav > img {
 /* =============== end about us CSS ======= */
 
 /* ============ Footer ===============*/
+
 footer { 
   bottom: 0;
 }
@@ -403,23 +378,6 @@ footer {
 /* =============== End of Footer ===========*/
 
 /* ========== Tutor Registration =========*/
-/* 
-#tutorText {
-  font-family: "chalk-regular", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: small;
-  font-style: normal;
-  text-align: center;
-  margin-top: 50px;
-  line-height: 1.5em;
-} */
-
-/* #tutorText > h1 {
-text-align: center;
-  font-size: 48px;
-  margin-top: 50px;
-  margin-bottom: 30px;
-  font-family: 'chalk-sketch','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-} */
 
 .pageTitle  {
   font-family: "chalk-sketch", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -428,7 +386,6 @@ text-align: center;
   margin-top: 45px;
   margin-bottom: 45px;
   text-align: center;
-  
 }
 
 .pageDescription {
@@ -488,7 +445,6 @@ legend {
   font-size: 18px;
   font-style: normal;
   text-align: center;
-  /* width: 300px;  TODO: Make it more presentable with reduced width and confetti */
 }
 
 /* =========== End of Tutor Registration =====*/
@@ -496,11 +452,6 @@ legend {
 /* ============  Begin Tutor List =======*/
 
 #tlText > h1 {
-  /* font-family: "chalk-sketch", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: x-large;
-  font-style: normal;
-  text-align: center;
-  margin-top: 50px; */
   font-family: "chalk-sketch", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 46px;
   font-weight: normal;
@@ -510,12 +461,6 @@ legend {
 }
 
 #tlText > div > p {
-  /* font-family: "chalk-regular", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  text-align: center;
-  margin-top: 50px;
-  line-height: 1.5em; */
   text-align: justify;
   text-align: center;
   width: 750px;
@@ -525,7 +470,6 @@ legend {
   font-size: 18px;
   font-style: normal;
   margin-top: 10px;
-
 }
 
 #realTutors {
@@ -538,10 +482,8 @@ legend {
   text-decoration: underline;
 }
 
-
-
 #tutorTableChalkBoard {
-  background-image: url("/img/black-chalkboard_2.jpg");
+  background-image: url("../img/black-chalkboard_2.jpg");
   background-repeat: none;
   background-size: 100%;
   height: 650px;
@@ -559,8 +501,6 @@ legend {
   position: relative;
   top: 50px;
 }
-
-
 
 #tableOfTutors {
   margin: 0px 20px 20px 35px;
