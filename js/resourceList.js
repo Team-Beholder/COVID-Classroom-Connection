@@ -54,6 +54,10 @@ Resource.prototype.renderResourceInTheTable = function() {
 };
 
 Resource.prototype.renderHeader = function() {
+  //clear the welcome message
+  var targetToClear = document.getElementById('welcomeMessage');
+  targetToClear.innerHTML ='';
+  
   // step 1 Find Target
   var targetTable = document.getElementById('resourceDataTable');
   // clear the target in case something is already there

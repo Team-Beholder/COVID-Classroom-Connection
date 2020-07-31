@@ -208,13 +208,16 @@ nav > img {
 }
 
 #welcomeMessage {
-  font-size: 65pt;
-  transform: rotate(-20deg)
-            skew(-20deg);
+  font-size: 60pt;
+  position: relative;
+  bottom: 50px;
+  transform: rotate(-10deg)
+            skew(-10deg);
   font-family: 'chalk-sketch', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   /* color: rgb(247, 213, 152); */
+  color: wheat;
   /* text-transform: uppercase; */
-  color: rgb(229, 222, 209);
+  /* color: rgb(229, 222, 209); */
   text-decoration: none;
   line-height: 1.5em;
 }
@@ -223,7 +226,7 @@ nav > img {
   text-decoration: line-through;
   }
 
-#resourceTable{
+#resourceTable {
   background-image: url("/img/black-chalkboard_2.jpg");
   background-repeat: none;
   background-size: 100%;
@@ -234,8 +237,32 @@ nav > img {
   padding: 20px;
   display: flex;
   justify-content: center;
-  
+  line-height: 1.2em;
+
 }
+
+/* Contains formatting done by Paul for Resource Table (keep?) (start)*/
+
+#resourceTable th, #resourceTable td {
+  border: solid white 3px;
+  border-collapse: collapse;
+  color: white;
+}
+
+#resourceTable td {
+  padding: 6px;
+  vertical-align: middle;
+}
+
+#resourceTable th {
+  font-weight: bold;
+  padding: 10px;
+  vertical-align: middle;
+  font-size: 15pt;
+}
+
+/* Contains formatting done by Paul for Resource Table (keep?) (end)*/
+
 
 #resourceTableChalkBoard {
   height: 475px;
@@ -504,6 +531,14 @@ legend {
 
 }
 
+#realTutors {
+  display: flex;
+  justify-content: center;
+}
+
+.realtutorLinks {
+  margin: 15px 30px 30px 30px;
+}
 
 #tutorTableChalkBoard {
   background-image: url("/img/black-chalkboard_2.jpg");
